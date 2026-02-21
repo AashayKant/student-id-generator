@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Student ID Generator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+  <h1>🎓 Student ID Management</h1>
+
+  <!-- CREATE SECTION -->
+  <h2>Create Student ID</h2>
+  <form id="studentForm">
+    <input type="text" name="name" placeholder="Full Name" required>
+    <input type="text" name="department" placeholder="Department" required>
+    <input type="text" name="year" placeholder="Year" required>
+    <input type="email" name="email" placeholder="Email" required>
+    <input type="file" name="photo" required>
+    <button type="submit">Generate ID</button>
+  </form>
+
+  <div id="cardPreview"></div>
+
+  <hr>
+
+  <!-- SEARCH SECTION -->
+  <h2>🔎 Search Student</h2>
+  <input type="text" id="searchId" placeholder="Enter Student ID">
+  <button onclick="searchStudent()">Search</button>
+
+  <div id="searchResult"></div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
